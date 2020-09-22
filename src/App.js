@@ -34,7 +34,7 @@ class App extends Component{
 		})
 }
 	push = () => {
-				let API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=74e25815c0ca1b67757ea32dfb274d84&units=metric`
+				let API = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=74e25815c0ca1b67757ea32dfb274d84&units=metric`
 		fetch(API)
 			.then(res => {
 				if(res.ok) return res
